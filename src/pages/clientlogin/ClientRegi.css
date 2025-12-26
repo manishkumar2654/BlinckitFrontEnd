@@ -1,0 +1,41 @@
+.reg-page {
+  min-height: 100vh;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reg-box {
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+}
+
+.reg-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reg-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reg-box input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.reg-box button {
+  background: #0c831f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

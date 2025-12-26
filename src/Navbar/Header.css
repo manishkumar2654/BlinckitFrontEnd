@@ -1,0 +1,43 @@
+.header {
+  height: 60px;
+  background: #0c831f;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-btn {
+  background: white;
+  color: #0c831f;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}

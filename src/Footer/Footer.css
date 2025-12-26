@@ -1,0 +1,14 @@
+.footer {
+  background: #f3f3f3;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer button {
+  background: #0c831f;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}

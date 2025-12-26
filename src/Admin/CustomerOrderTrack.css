@@ -1,0 +1,42 @@
+.order-page {
+  padding: 10px;
+}
+
+.order-page h2 {
+  margin-bottom: 20px;
+}
+
+/* TABLE STYLE USING DIVS */
+.order-table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.order-head,
+.order-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr 1fr 1.5fr;
+  padding: 12px;
+  align-items: center;
+}
+
+.order-head {
+  background: #0c831f;
+  color: white;
+  font-weight: bold;
+}
+
+.order-row {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.order-row:hover {
+  background: #f5f5f5;
+}
+
+.products {
+  font-size: 12px;
+  color: gray;
+}
