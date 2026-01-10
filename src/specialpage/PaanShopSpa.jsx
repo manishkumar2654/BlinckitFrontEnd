@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import BackendURL from "../BackendURL";
 import "../specialpage/PaanShopSpa.css";
-import panimg from "../images/pannnshopa.jpg";
+import panimg from "../Images/pannnshopa.jpg";
 
 const PaanShopSpa = () => {
   const [mydata, setMydata] = useState([]);
