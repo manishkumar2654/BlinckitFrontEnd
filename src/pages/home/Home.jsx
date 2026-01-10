@@ -5,6 +5,27 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import BackendURL from "../../BackendURL";
+import panimg from "../../images/pannnshopa.jpg";
+import CandiesGums from "../../category/CandiesGums";
+import SnacksMunchies from "../../category/SnacksMunchies";
+import DairyBreadEggs from "../../category/DairyBreadEggs";
+import ColdDrinksJuices from "../../category/ColdDrinksJuices";
+import ChickenMeatFish from "../../category/ChickenMeatFish";
+import PetCare from "../../category/PetCare";
+import AttaRiceDal from "../../category/AttaRiceDal";
+import BabyCare from "../../category/BabyCare";
+import BakeryBiscuits from "../../category/BakeryBiscuits";
+import BeautyCosmetics from "../../category/BeautyCosmetics";
+import CleaningEssentials from "../../category/CleaningEssentials";
+import DigitalGoods from "../../category/DigitalGoods";
+import FrozenDessertsIceCream from "../../category/FrozenDessertsIceCream";
+import Magazines from "../../category/Magazines";
+import PersonalCare from "../../category/PersonalCare";
+import PharmaWellness from "../../category/PharmaWellness";
+import SweetTooth from "../../category/SweetTooth";
+import ToysGames from "../../category/ToysGames";
+import VegetablesFruits from "../../category/VegetablesFruits";
+import PaanShop from "../../category/PaanShop";
 
 const Home = () => {
   const [mydata, setMydata] = useState([]);
@@ -47,55 +68,93 @@ const Home = () => {
     authCheck();
   }, []);
 
+
+  const pannavi = () => {
+    navigate("/paanshop");
+  }
+
   return (
     <div className="home">
-     
+      <img src={panimg} alt="" onClick={pannavi} />
 
-      <div className="product-grid">
-        {mydata.map((item, idx) => (
-          <div className="product-card" key={idx}>
-            <img
-              src={item.defaultImage}
-              alt={item.name}
-              onClick={() => navigate(`/productdispaly/${item._id}`)}
-            />
-
-            <h4>{item.name}</h4>
-            <p className="desc">{item.category}</p>
-
-            <div className="price-row">
-              <span className="price">₹{item.price}</span>
-
-              <button
-                className="add-btn"
-                onClick={() =>
-                  dispatch(
-                    addtoCart({
-                      id: item._id,
-                      name: item.name,
-                      category: item.category,
-                      decription: item.decription,
-                      price: item.price,
-                      defaultImage: item.defaultImage,
-                      images: item.images,
-                      qnty: 1,
-                    })
-                  )
-                }
-              >
-                ADD
-              </button>
-            </div>
-
-            <button
-              className="view-btn"
-              onClick={() => navigate(`/productdispaly/${item._id}`)}
-            >
-              View
-            </button>
-          </div>
-        ))}
+      <div className="category-wrapper">
+        <CandiesGums />
       </div>
+
+      <div className="category-wrapper">
+        {" "}
+        <SnacksMunchies />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <DairyBreadEggs />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <ColdDrinksJuices />
+      </div>
+
+      <div className="category-wrapper">
+        <ChickenMeatFish />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <PetCare />{" "}
+      </div>
+      <div className="category-wrapper">
+        <AttaRiceDal />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <BabyCare />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <BakeryBiscuits />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <BeautyCosmetics />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <CleaningEssentials />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <DigitalGoods />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <FrozenDessertsIceCream />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <Magazines />{" "}
+      </div>
+      <div className="category-wrapper">
+        <PersonalCare />{" "}
+      </div>
+      <div className="category-wrapper">
+        <PharmaWellness />{" "}
+      </div>
+      <div className="category-wrapper">
+        <SweetTooth />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <ToysGames />{" "}
+      </div>
+
+      <div className="category-wrapper">
+        <VegetablesFruits />{" "}
+      </div>
+
+
+       <div className="category-wrapper">
+        <PaanShop />{" "}
+      </div>
+
     </div>
   );
 };

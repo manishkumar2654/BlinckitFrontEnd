@@ -10,6 +10,7 @@ import ClientRegi from "./pages/clientlogin/ClientRegi";
 import CheckOut from "./pages/checkout/CheckOut";
 import CostumerOderTrack from "./Admin/CostumerOderTrack";
 import ProductDisplau from "./pages/ProductDisplau";
+import PaanShopSpa from "./specialpage/PaanShopSpa";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="carddata" element={<CardData />} />
           <Route path="checkout" element={<CheckOut />} />
           <Route path="productdispaly/:id" element={<ProductDisplau />} />
+          <Route path="paanshop" element={<PaanShopSpa/>}/>
         </Route>
 
         {/* Admin Routes */}
