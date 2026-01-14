@@ -36,31 +36,31 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* 🔥 BANNER */}
+      {/*  BANNER */}
       <div className="home-banner" onClick={pannavi}>
         <img src="/pannnshopa.jpg" alt="Paan Banner" />
       </div>
 
-      {/* 🔥 CATEGORY SECTIONS */}
+      {/*  CATEGORY SECTIONS */}
       <div className="category-wrapper"><CandiesGums /></div>
       <div className="category-wrapper"><SnacksMunchies /></div>
       <div className="category-wrapper"><DairyBreadEggs /></div>
       <div className="category-wrapper"><ColdDrinksJuices /></div>
       <div className="category-wrapper"><ChickenMeatFish /></div>
       <div className="category-wrapper"><PetCare /></div>
-      <div className="category-wrapper"><AttaRiceDal /></div>
+      {/* <div className="category-wrapper"><AttaRiceDal /></div> */}
       <div className="category-wrapper"><BabyCare /></div>
-      <div className="category-wrapper"><BakeryBiscuits /></div>
+      {/* <div className="category-wrapper"><BakeryBiscuits /></div> */}
       <div className="category-wrapper"><BeautyCosmetics /></div>
-      <div className="category-wrapper"><CleaningEssentials /></div>
+      {/* <div className="category-wrapper"><CleaningEssentials /></div>
       <div className="category-wrapper"><DigitalGoods /></div>
-      <div className="category-wrapper"><FrozenDessertsIceCream /></div>
+      <div className="category-wrapper"><FrozenDessertsIceCream /></div> */}
       <div className="category-wrapper"><Magazines /></div>
-      <div className="category-wrapper"><PersonalCare /></div>
+      {/* <div className="category-wrapper"><PersonalCare /></div>
       <div className="category-wrapper"><PharmaWellness /></div>
-      <div className="category-wrapper"><SweetTooth /></div>
+      <div className="category-wrapper"><SweetTooth /></div> */}
       <div className="category-wrapper"><ToysGames /></div>
-      <div className="category-wrapper"><VegetablesFruits /></div>
+      {/* <div className="category-wrapper"><VegetablesFruits /></div> */}
       <div className="category-wrapper"><PaanShop /></div>
     </div>
   );
