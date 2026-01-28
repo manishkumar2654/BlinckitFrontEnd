@@ -13,6 +13,7 @@ import ProductDisplau from "./pages/ProductDisplau";
 import PaanShopSpa from "./specialpage/PaanShopSpa";
 import PetPage from "./specialpage/PetPage";
 import BabyCareShopSpa from "./specialpage/BabyCareShopSpa";
+import SearchPage from "./Navbar/SearchPage";
 
 const App = () => {
   return (
@@ -32,6 +33,8 @@ const App = () => {
           <Route path="paanshop" element={<PaanShopSpa/>}/>
           <Route path="petpage" element={<PetPage/>}/>
           <Route path="babycarepage" element={<BabyCareShopSpa/>}/>
+          <Route path="/search" element={<SearchPage/>} />
+
         </Route>
 
         {/* Admin Routes */}
