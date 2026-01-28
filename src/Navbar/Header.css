@@ -1,118 +1,55 @@
-/* ================= HEADER ================= */
-.header {
-  height: 60px;
+/* LOGO */
+.logo-text {
+  font-size: 26px;
+  color: #f7d106;
+  cursor: pointer;
+}
+
+/* DELIVERY */
+.delivery-info h6 {
+  font-size: 14px;
+}
+
+.delivery-info small {
+  font-size: 12px;
+}
+
+/* SEARCH */
+.search-input {
+  background: #f8f8f8;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 10px 14px;
+}
+
+/* CART */
+.cart-btn {
   background: #0c831f;
-  color: white;
-
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  padding: 0 30px;
-
-  /* 🔥 STICKY */
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-/* ================= LOGO ================= */
-.logo {
-  font-size: 22px;
-  font-weight: bold;
+  gap: 8px;
   cursor: pointer;
 }
 
-/* ================= NAV ================= */
-.nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* ================= RIGHT SECTION ================= */
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-/* ================= LOGIN BUTTON ================= */
-.login-btn {
-  background: white;
+.cart-count {
+  background: #fff;
   color: #0c831f;
-  border: none;
-  padding: 6px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-/* ================= CART ================= */
-.cart {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-  position: relative;
-}
-
-.cart svg {
-  font-size: 20px;
-}
-
-/* CART COUNT BADGE */
-.cart span {
-  position: absolute;
-  top: -6px;
-  right: -10px;
-  background: #ff3d00;
-  color: white;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: bold;
   padding: 2px 6px;
   border-radius: 50%;
-  font-weight: bold;
 }
 
-/* ================= TABLET ================= */
+/* MOBILE */
 @media (max-width: 768px) {
-  .header {
-    padding: 0 20px;
+  .search-input {
+    width: 100%;
   }
 
-  .logo {
-    font-size: 20px;
-  }
-
-  .nav a {
-    margin: 0 10px;
-  }
-}
-
-/* ================= MOBILE (BLINKIT STYLE) ================= */
-@media (max-width: 480px) {
-  .header {
-    height: 56px;
-    padding: 0 12px;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  /* Hide nav on mobile */
-  .nav {
-    display: none;
-  }
-
-  .login-btn {
-    padding: 4px 10px;
-    font-size: 12px;
-  }
-
-  .cart svg {
-    font-size: 22px;
+  .cart-btn {
+    padding: 6px 10px;
   }
 }

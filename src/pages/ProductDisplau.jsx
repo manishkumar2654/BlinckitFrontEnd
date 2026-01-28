@@ -1,3 +1,5 @@
+//ye page jub product view karege to ye page dikhega
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
@@ -46,6 +48,7 @@ const ProductDisplau = () => {
 
   return (
     <div className="product-page">
+      
       <div className="product-box">
 
         {/* LEFT IMAGE SECTION */}

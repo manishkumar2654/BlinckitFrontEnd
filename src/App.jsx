@@ -11,6 +11,8 @@ import CheckOut from "./pages/checkout/CheckOut";
 import CostumerOderTrack from "./Admin/CostumerOderTrack";
 import ProductDisplau from "./pages/ProductDisplau";
 import PaanShopSpa from "./specialpage/PaanShopSpa";
+import PetPage from "./specialpage/PetPage";
+import BabyCareShopSpa from "./specialpage/BabyCareShopSpa";
 
 const App = () => {
   return (
@@ -28,6 +30,8 @@ const App = () => {
           <Route path="checkout" element={<CheckOut />} />
           <Route path="productdispaly/:id" element={<ProductDisplau />} />
           <Route path="paanshop" element={<PaanShopSpa/>}/>
+          <Route path="petpage" element={<PetPage/>}/>
+          <Route path="babycarepage" element={<BabyCareShopSpa/>}/>
         </Route>
 
         {/* Admin Routes */}

@@ -1,6 +1,6 @@
 import { FaCartPlus } from "react-icons/fa";
 import { useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -8,27 +8,63 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <header className="header">
-      <div className="logo" onClick={() => navigate("/")}>
-        Blinkit
-      </div>
+    <nav className="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+      <div className="container-fluid px-4">
 
-      <nav className="nav">
-        <Link to="/">Home</Link>
-      
-      </nav>
+        {/* LOGO */}
+        <span className="navbar-brand fw-bold logo-text" onClick={() => navigate("/")}>
+          Blinkit
+        </span>
 
-      <div className="header-right">
-        <button className="login-btn" onClick={() => navigate("/clientlogin")}>
-          Login
+        {/* TOGGLER (MOBILE) */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#blinkitNavbar"
+        >
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="cart" onClick={() => navigate("/carddata")}>
-          <FaCartPlus />
-          <span>{cartData.length}</span>
+        {/* NAV CONTENT */}
+        <div className="collapse navbar-collapse" id="blinkitNavbar">
+
+          {/* DELIVERY INFO */}
+          <div className="delivery-info ms-lg-3 d-none d-lg-block">
+            <h6 className="mb-0 fw-bold">Delivery in 10 minutes</h6>
+            <small className="text-muted">
+              Airport Rd, Raja Bhoj Airport
+            </small>
+          </div>
+
+          {/* SEARCH */}
+          <form className="d-flex flex-grow-1 mx-lg-4 my-3 my-lg-0">
+            <input
+              className="form-control search-input"
+              type="search"
+              placeholder="Search for products..."
+            />
+          </form>
+
+          {/* RIGHT */}
+          <div className="d-flex align-items-center gap-3">
+
+            <button
+              className="btn btn-outline-dark"
+              onClick={() => navigate("/clientlogin")}
+            >
+              Login
+            </button>
+
+            <div className="cart-btn" onClick={() => navigate("/carddata")}>
+              <FaCartPlus />
+              <span className="cart-count">{cartData.length}</span>
+            </div>
+
+          </div>
         </div>
       </div>
-    </header>
+    </nav>
   );
 };
 

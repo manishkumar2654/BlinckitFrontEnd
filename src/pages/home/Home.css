@@ -15,3 +15,17 @@
 .category-wrapper {
   margin-bottom: 30px;
 }
+
+
+.home-banner-2 {
+  width: 400px;
+}
+
+.smallbanerdiv {
+  display: flex;
+  flex-direction: row; /* Default row hi hota hai */
+  justify-content: space-between; /* Items ke beech gap ke liye */
+  align-items: center; /* Vertical alignment ke liye */
+  gap: 10px; /* Specific gap dene ke liye */
+}
+
